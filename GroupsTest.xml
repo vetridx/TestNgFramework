@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="mobapps">
+  <include name="socialmedia"></include>
+  <include name="messenger"></include>
+  </define>
+  <run>
+  <include name="mobapps"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.TestNG.GroupsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
